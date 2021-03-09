@@ -3,18 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1736348C2FB9065B5F146438 /* Pods_ProjectB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2930C6C74FAFE73730DE806D /* Pods_ProjectB.framework */; };
 		FD10973E25F7475D00C015BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10973D25F7475D00C015BF /* AppDelegate.swift */; };
-		FD10974025F7475D00C015BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10973F25F7475D00C015BF /* SceneDelegate.swift */; };
-		FD10974225F7475D00C015BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10974125F7475D00C015BF /* ViewController.swift */; };
-		FD10974525F7475D00C015BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD10974325F7475D00C015BF /* Main.storyboard */; };
 		FD10974725F7475F00C015BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD10974625F7475F00C015BF /* Assets.xcassets */; };
 		FD10974A25F7475F00C015BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD10974825F7475F00C015BF /* LaunchScreen.storyboard */; };
+		FDDFAF8A25F7885E00D8A8E0 /* ProjectBModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFAF8925F7885E00D8A8E0 /* ProjectBModule.framework */; };
+		FDDFAF8B25F7885E00D8A8E0 /* ProjectBModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFAF8925F7885E00D8A8E0 /* ProjectBModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FDDFAF8C25F7885E00D8A8E0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FDDFAF8B25F7885E00D8A8E0 /* ProjectBModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2930C6C74FAFE73730DE806D /* Pods_ProjectB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,12 +35,10 @@
 		D9AB3115794BADB65708F84F /* Pods-ProjectB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectB.debug.xcconfig"; path = "Target Support Files/Pods-ProjectB/Pods-ProjectB.debug.xcconfig"; sourceTree = "<group>"; };
 		FD10973A25F7475D00C015BF /* ProjectB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD10973D25F7475D00C015BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD10973F25F7475D00C015BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD10974125F7475D00C015BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FD10974425F7475D00C015BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD10974625F7475F00C015BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD10974925F7475F00C015BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD10974B25F7475F00C015BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDFAF8925F7885E00D8A8E0 /* ProjectBModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProjectBModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1736348C2FB9065B5F146438 /* Pods_ProjectB.framework in Frameworks */,
+				FDDFAF8A25F7885E00D8A8E0 /* ProjectBModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +57,7 @@
 		68AC06A6FBFA2C15ACBFC099 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FDDFAF8925F7885E00D8A8E0 /* ProjectBModule.framework */,
 				2930C6C74FAFE73730DE806D /* Pods_ProjectB.framework */,
 			);
 			name = Frameworks;
@@ -56,7 +69,6 @@
 				D9AB3115794BADB65708F84F /* Pods-ProjectB.debug.xcconfig */,
 				31D883B7DF7A1C9A9CA3C9D1 /* Pods-ProjectB.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,9 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				FD10973D25F7475D00C015BF /* AppDelegate.swift */,
-				FD10973F25F7475D00C015BF /* SceneDelegate.swift */,
-				FD10974125F7475D00C015BF /* ViewController.swift */,
-				FD10974325F7475D00C015BF /* Main.storyboard */,
 				FD10974625F7475F00C015BF /* Assets.xcassets */,
 				FD10974825F7475F00C015BF /* LaunchScreen.storyboard */,
 				FD10974B25F7475F00C015BF /* Info.plist */,
@@ -104,6 +113,7 @@
 				FD10973725F7475D00C015BF /* Frameworks */,
 				FD10973825F7475D00C015BF /* Resources */,
 				ADD46066B852C4281F1B3CAF /* [CP] Embed Pods Frameworks */,
+				FDDFAF8C25F7885E00D8A8E0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,7 +163,6 @@
 			files = (
 				FD10974A25F7475F00C015BF /* LaunchScreen.storyboard in Resources */,
 				FD10974725F7475F00C015BF /* Assets.xcassets in Resources */,
-				FD10974525F7475D00C015BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,23 +215,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD10974225F7475D00C015BF /* ViewController.swift in Sources */,
 				FD10973E25F7475D00C015BF /* AppDelegate.swift in Sources */,
-				FD10974025F7475D00C015BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FD10974325F7475D00C015BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD10974425F7475D00C015BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FD10974825F7475F00C015BF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -340,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -359,6 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = ProjectB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = ProjectB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
